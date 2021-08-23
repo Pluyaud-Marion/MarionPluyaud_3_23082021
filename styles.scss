@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'robotoregular';
+    src:url('/font/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('/font/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family:'Shrikhand-Regular';
+    src: url('/font/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+}
+
+h1
+{
+    font-family: 'robotoregular';
+}
+
+p {
+    font-family: 'Shrikhand-Regular';
+}
