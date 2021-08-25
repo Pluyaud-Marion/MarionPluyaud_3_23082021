@@ -11,6 +11,52 @@ $primary-color:#9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color:#99E2D0;
 
+/*Mixin des boutons*/
+@mixin bouton{
+    border-radius: 20px;
+    width: 60%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: 19%;
+    background: linear-gradient($secondary-color, $primary-color);
+    color: white;
+    font-weight: bold;
+    border:none;
+}
+
+@mixin footer{
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 7%;
+    h3{
+        font-family: 'Shrikhand-Regular';
+        margin:0;
+        margin-bottom: 5%;
+    }
+
+    .texte_icone{
+        display: flex;
+        align-items: center;
+        p{
+            margin:2%;
+        }
+    }
+    .texte_seul{
+        margin: 2% 0;
+    }
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+footer{
+    a{
+        color: white;
+    }
+}
 body
 {
     font-family: 'robotoregular';
@@ -55,15 +101,7 @@ header{
         text-align: center;
     
         +input{
-            border-radius: 20px;
-            width: 60%;
-            padding-top: 4%;
-            padding-bottom: 4%;
-            margin-left: 19%;
-            background: linear-gradient($secondary-color, $primary-color);
-            color: white;
-            font-weight: bold;
-            border:none;
+            @include bouton;
         }
     }
 }
@@ -169,33 +207,9 @@ nav{
     }
 }
 
-h3 
-{
-    font-family: 'Shrikhand-Regular';
-    margin:0;
-    margin-bottom: 5%;
-}
-footer
-{
-    background-color: rgb(39, 38, 38);
-    color: white;
-    padding: 10%;
-    a {
-        text-decoration: none;
-        color:white;
-        margin-bottom: 5%;
-    }
-  
-    .texte_icone{
-        display: flex;
-        align-items: center;
-        p{
-            margin:2%;
-        }
-    }
-    .texte_seul{
-        margin: 2% 0;
-    }
+
+footer{
+    @include footer;
 }
 
 .titre_coeur_page_restaurant{
@@ -213,36 +227,42 @@ header{
         width: 100%;
     }
 }
-
+/*page globale sans l'image*/
 .menu{
-    border:red solid;
     border-radius: 30px 30px 0 0;
     padding-top: 10%;
     background-color: whitesmoke;
-    margin-left: 4%;
-    width: 90%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 10%;
+   
     .entrees, .plats, .desserts{
+        /*Toutes les cartes entrées + plat + dessert*/
         .carte{
             background-color: white;
             margin-bottom: 4%;
             border-radius: 15px;
             height: 70px;
+            /*Les noms des plats*/
             p{
                 font-size: medium;
                 font-weight: bold;
                 margin-bottom: 1%;
                 padding-top: 3%;
-                margin-left: 2%;
+                margin-left: 3%;
             }
+            /*Le texte en dessous du nom des plats + le prix*/
             .legende_prix{
                 display: flex;
                 align-items:center;
                 justify-content: space-between;
+                /*uniquement le texte sous le nom des plats*/
                 >p{
                     font-size: small;
                     padding-top: 0;
                     margin-top: 0;
                 }
+                /*uniquement le prix*/
                 span{
                     font-weight: bold;
                     padding-right: 5%;
@@ -251,4 +271,16 @@ header{
             }
         }
     }
+}
+/*Les mots Entrees / Plats et Desserts */
+.rubrique{
+    border-bottom: #99E2D0 solid;
+    font-weight: 100;
+    margin-left: 2%
+}
+/*Le bouton commander*/
+.bouton_commander{
+    @include bouton;
+    margin-top: 7%;
+    margin-bottom: 3%;
 }
