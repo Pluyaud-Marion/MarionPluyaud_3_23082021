@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Ohmyfood!</title>
+    <title>Ohmyfood</title>
     <script src="https://kit.fontawesome.com/9593c52141.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <img class="logo" src="ohmyfood.png" alt="logo">
-        <section class="header_sans_titre">
-            <div class="zone_recherche">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" placeholder="Paris, Belleville">
-            </div>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <input type="submit" value="Explorer nos restaurants">
-        </section>
+        <div class="zone_recherche">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="search" placeholder="Paris, Belleville">
+        </div>
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <input type="submit" value="Explorer nos restaurants">
+  
     </header>
     <nav>
         <h2>Fonctionnement</h2>
@@ -42,43 +41,43 @@
     <section class="vignettes_global">
         <h2>Restaurants</h2>
         <div class="vignette">
-            <a href="vide.html">
+            <a href="la_palette_du_gout.html">
                 <img src="/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                 <div class="titre_coeur">
                     <p>La palette du goût</p>
-                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart coeur"></i>
                 </div>
                 <p>Ménilmontant</p>
             </a>
             <div class="new">Nouveau</div>
         </div>
         <div class="vignette">
-            <a href="vide.html">
+            <a href="la_note_enchantee.html">
                 <img src="restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
                 <div class="titre_coeur">
                     <p>La note enchantée</p>
-                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart coeur"></i>
                 </div>
                 <p>Charonne</p>
             </a>
             <div class="new">Nouveau</div>
         </div>
         <div class="vignette">
-            <a href="vide.html">
+            <a href="a_la_francaise.html">
                 <img src="restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                 <div class="titre_coeur">
                     <p>À la française</p>
-                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart coeur"></i>
                 </div>
                 <p>Cité Rouge</p>
             </a>
         </div>
         <div class="vignette">
-            <a href="vide.html">
+            <a href="le_delice_des_sens.html">
                 <img src="restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                 <div class="titre_coeur">
                     <p>Le délice des sens</p>
-                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart coeur"></i>
                 </div>
                 <p>Folie-Méricourt</p>
             </a>
@@ -88,7 +87,7 @@
         <h3>ohmyfood</h3>
         <div class="texte_icone">
             <i class="fas fa-utensils"></i>
-            <p>Proposer un restaurant</p>
+            <p id="legende_1">Proposer un restaurant</p>
         </div>
         <div class="texte_icone">
             <i class="fas fa-hands-helping"></i>
