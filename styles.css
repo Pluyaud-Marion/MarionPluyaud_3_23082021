@@ -124,7 +124,7 @@ header .zone_recherche > input {
 
 header h1 {
   text-align: center;
-  font-weight: 1000;
+  font-weight: 900;
   padding-left: 6%;
   padding-right: 5%;
   font-size: x-large;
@@ -132,7 +132,7 @@ header h1 {
 }
 
 header p {
-  font-weight: 1;
+  font-weight: 100;
   font-size: small;
   padding-left: 1%;
   padding-right: 4%;
@@ -249,7 +249,6 @@ nav .filtre > p {
   opacity: 1;
   font-weight: 900;
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
 }
 

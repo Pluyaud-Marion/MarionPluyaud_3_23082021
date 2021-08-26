@@ -27,7 +27,7 @@ header .zone_recherche {
 }
 
 header .image_restaurant {
-  height: 500px;
+  height: 600px;
 }
 
 header p + input {
@@ -144,7 +144,7 @@ nav span {
 }
 
 .menu .entrees .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .entrees .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .entrees .cartes_desserts .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_desserts .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_desserts .carte .carte_sans_check .legende_prix .prix {
-  font-size: medium;
+  font-size: 25px;
 }
 
 .titre_coeur_page_restaurant .coeur {
