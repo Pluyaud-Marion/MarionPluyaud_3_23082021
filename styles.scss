@@ -224,7 +224,6 @@ nav{
     }
 }
 
-
 .coeur{
     font-size: x-large;
     font-weight: 100;
@@ -297,7 +296,6 @@ header{
         width: 100%;
     }
 }
-
 
 
 /*page globale sans l'image*/
@@ -399,9 +397,12 @@ header{
     }
 }
 
+.boite_rubrique{
+    border-bottom: #99E2D0 solid;
+    width: 13%;
+}
 /*Les mots Entrees / Plats et Desserts */
 .rubrique{
-    border-bottom: #99E2D0 solid;
     font-weight: 100;
     margin-left: 2%;
 }
