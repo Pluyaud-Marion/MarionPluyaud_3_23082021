@@ -27,20 +27,12 @@ $primary-color-clair:#c4a1ee;
     }
 }
 
-@keyframes coche_carte{
-    0%{
-        transform:scale(0);
-    }
-    100%{
-        transform:scale(4);
-    }
-}
 @keyframes rotate_check{
     0%{
-        transform: rotate(0turn);
+        transform: rotate(0deg);
     }
     100%{
-        transform: rotate(1turn);
+        transform: rotate(360deg);
     }
 }
 /*Mixin des boutons*/
@@ -294,6 +286,9 @@ header{
         width: 100%;
     }
 }
+
+
+
 /*page globale sans l'image*/
 .menu{
     border-radius: 30px 30px 0 0;
@@ -309,71 +304,86 @@ header{
     .entrees, .plats, .desserts{
         /*Toutes les cartes entrées + plat + dessert*/
         margin-top: 10%;
-        .cartes_entrees, .cartes_desserts, .carte_plats{
+        .cartes_entrees, .cartes_plats, .cartes_desserts{
             margin-top: 5%;
-        }
-        .carte{
-            background-color: white;
-            margin-bottom: 4%;
-            border-radius: 15px;
-            height: 70px;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            cursor: pointer;
-
-            .carte_sans_check{
-                width: 100%;
-                &:active +.bloc_check{
-                    animation-name: coche_carte;
-                    animation-duration:3s;
-                    animation-fill-mode: forwards;
-                }
-            }
-            p{
-                font-size: small;
-                font-weight: bold;
-                margin-bottom: 1%;
-                margin-left: 3%;
-            }
-            .bloc_check{
-                width: 0%;
-                background-color: $tertiary-color;
-                border-radius: 0 15px 15px 0;
- 
-                .check{
-                    padding-left: 25%;
-                    padding-top: 25%;
-                    font-size: x-large;
-                    color: white;
-                    &:active{
-                        animation-name: rotate_check;
-                    }
-                }  
-            }      
-            /*Le texte en dessous du nom des plats + le prix*/
-            .legende_prix{
+            .carte{
+                background-color: white;
+                margin-bottom: 4%;
+                border-radius: 15px;
                 display: flex;
-                align-items:center;
                 justify-content: space-between;
-                /*uniquement le texte sous le nom des plats*/
-                >p{
-                    font-size: x-small;
-                    padding-top: 0;
-                    margin-top: 0;
+                width: 100%;
+                cursor: pointer;
+                overflow: hidden;
+                &:hover .prix{
+                    transform: translateX(-160%);
                 }
-                /*uniquement le prix*/
-                .prix{
-                    font-weight: bold;
-                    padding-right: 5%;
-                    font-size: small;
-                    &:active{
-                        animation-name: coche_carte;
-                        animation-duration:3s;
-                        animation-fill-mode: forwards;
+                &:hover .sous_titre{
+                    margin-right: 20%;
+                }
+                &:hover .titre_plat{
+                    margin-right: 30%;
+                }
+                &:hover >.bloc_check{
+                    transform: translateX(-120%);
+                }
+                &:hover .check{
+                    animation: rotate_check 0.7s 0.2s ease-in-out;             
+                }
+                .carte_sans_check{
+                    width: 100%;
+                    transition-duration: 2ms;
+                    .titre_plat{
+                        font-size: medium;
+                        font-weight: bold;
+                        margin-bottom: 1%;
+                        margin-top:3%;
+                        margin-left: 3%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        transition: 1s;
                     }
+                    .legende_prix{
+                        display: flex;
+                        justify-content: space-between;
+                        .sous_titre{
+                            width: 80%;
+                            margin-left: 3%;
+                            margin-bottom: 3%;
+                            font-size: small;
+                            margin-top: 1px;
+                            font-weight: 300;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            transition: 1s;
+                            transition-property: all;
+                        }    
+                        .prix{
+                            font-weight: bold;
+                            padding-right: 5%;
+                            font-size: small;
+                            transition-property: all;
+                            transition-duration: 1s;
+                        }
+                    }    
                 }
-            }    
+                .bloc_check{
+                    width: 23%;
+                    background-color: $tertiary-color;
+                    border-radius: 0 15px 15px 0;
+                    margin-right: -30%;
+                    transition-duration: 1s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .check{
+                        font-size: x-large;
+                        color: white;
+                    }  
+                }      
+            }
         }
     }
 }
@@ -392,17 +402,17 @@ header{
     @include survol_bouton;
 }
 
-.cartes_entrees{
-    animation-name: animation_carte;
-    animation-duration: 2s;
-}
-.cartes_plats{
-    animation-name: animation_carte;
-    animation-duration: 2s;
-    animation-delay: 2s;
-}
-.cartes_desserts{
-    animation-name: animation_carte;
-    animation-duration: 2s;
-    animation-delay: 4s;
-}
+// .cartes_entrees{
+//     animation-name: animation_carte;
+//     animation-duration: 2s;
+// }
+// .cartes_plats{
+//     animation-name: animation_carte;
+//     animation-duration: 2s;
+//     animation-delay: 2s;
+// }
+// .cartes_desserts{
+//     animation-name: animation_carte;
+//     animation-duration: 2s;
+//     animation-delay: 4s;
+// }

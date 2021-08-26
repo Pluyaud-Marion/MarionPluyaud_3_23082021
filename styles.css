@@ -41,47 +41,25 @@
   }
 }
 
-@-webkit-keyframes coche_carte {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(4);
-            transform: scale(4);
-  }
-}
-
-@keyframes coche_carte {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(4);
-            transform: scale(4);
-  }
-}
-
 @-webkit-keyframes rotate_check {
   0% {
-    -webkit-transform: rotate(0turn);
-            transform: rotate(0turn);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotate_check {
   0% {
-    -webkit-transform: rotate(0turn);
-            transform: rotate(0turn);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -384,15 +362,14 @@ header .image_restaurant {
   margin-top: 10%;
 }
 
-.menu .entrees .cartes_entrees, .menu .entrees .cartes_desserts, .menu .entrees .carte_plats, .menu .plats .cartes_entrees, .menu .plats .cartes_desserts, .menu .plats .carte_plats, .menu .desserts .cartes_entrees, .menu .desserts .cartes_desserts, .menu .desserts .carte_plats {
+.menu .entrees .cartes_entrees, .menu .entrees .cartes_plats, .menu .entrees .cartes_desserts, .menu .plats .cartes_entrees, .menu .plats .cartes_plats, .menu .plats .cartes_desserts, .menu .desserts .cartes_entrees, .menu .desserts .cartes_plats, .menu .desserts .cartes_desserts {
   margin-top: 5%;
 }
 
-.menu .entrees .carte, .menu .plats .carte, .menu .desserts .carte {
+.menu .entrees .cartes_entrees .carte, .menu .entrees .cartes_plats .carte, .menu .entrees .cartes_desserts .carte, .menu .plats .cartes_entrees .carte, .menu .plats .cartes_plats .carte, .menu .plats .cartes_desserts .carte, .menu .desserts .cartes_entrees .carte, .menu .desserts .cartes_plats .carte, .menu .desserts .cartes_desserts .carte {
   background-color: white;
   margin-bottom: 4%;
   border-radius: 15px;
-  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,80 +378,107 @@ header .image_restaurant {
           justify-content: space-between;
   width: 100%;
   cursor: pointer;
-  /*Le texte en dessous du nom des plats + le prix*/
+  overflow: hidden;
 }
 
-.menu .entrees .carte .carte_sans_check, .menu .plats .carte .carte_sans_check, .menu .desserts .carte .carte_sans_check {
+.menu .entrees .cartes_entrees .carte:hover .prix, .menu .entrees .cartes_plats .carte:hover .prix, .menu .entrees .cartes_desserts .carte:hover .prix, .menu .plats .cartes_entrees .carte:hover .prix, .menu .plats .cartes_plats .carte:hover .prix, .menu .plats .cartes_desserts .carte:hover .prix, .menu .desserts .cartes_entrees .carte:hover .prix, .menu .desserts .cartes_plats .carte:hover .prix, .menu .desserts .cartes_desserts .carte:hover .prix {
+  -webkit-transform: translateX(-160%);
+          transform: translateX(-160%);
+}
+
+.menu .entrees .cartes_entrees .carte:hover .sous_titre, .menu .entrees .cartes_plats .carte:hover .sous_titre, .menu .entrees .cartes_desserts .carte:hover .sous_titre, .menu .plats .cartes_entrees .carte:hover .sous_titre, .menu .plats .cartes_plats .carte:hover .sous_titre, .menu .plats .cartes_desserts .carte:hover .sous_titre, .menu .desserts .cartes_entrees .carte:hover .sous_titre, .menu .desserts .cartes_plats .carte:hover .sous_titre, .menu .desserts .cartes_desserts .carte:hover .sous_titre {
+  margin-right: 20%;
+}
+
+.menu .entrees .cartes_entrees .carte:hover .titre_plat, .menu .entrees .cartes_plats .carte:hover .titre_plat, .menu .entrees .cartes_desserts .carte:hover .titre_plat, .menu .plats .cartes_entrees .carte:hover .titre_plat, .menu .plats .cartes_plats .carte:hover .titre_plat, .menu .plats .cartes_desserts .carte:hover .titre_plat, .menu .desserts .cartes_entrees .carte:hover .titre_plat, .menu .desserts .cartes_plats .carte:hover .titre_plat, .menu .desserts .cartes_desserts .carte:hover .titre_plat {
+  margin-right: 30%;
+}
+
+.menu .entrees .cartes_entrees .carte:hover > .bloc_check, .menu .entrees .cartes_plats .carte:hover > .bloc_check, .menu .entrees .cartes_desserts .carte:hover > .bloc_check, .menu .plats .cartes_entrees .carte:hover > .bloc_check, .menu .plats .cartes_plats .carte:hover > .bloc_check, .menu .plats .cartes_desserts .carte:hover > .bloc_check, .menu .desserts .cartes_entrees .carte:hover > .bloc_check, .menu .desserts .cartes_plats .carte:hover > .bloc_check, .menu .desserts .cartes_desserts .carte:hover > .bloc_check {
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+}
+
+.menu .entrees .cartes_entrees .carte:hover .check, .menu .entrees .cartes_plats .carte:hover .check, .menu .entrees .cartes_desserts .carte:hover .check, .menu .plats .cartes_entrees .carte:hover .check, .menu .plats .cartes_plats .carte:hover .check, .menu .plats .cartes_desserts .carte:hover .check, .menu .desserts .cartes_entrees .carte:hover .check, .menu .desserts .cartes_plats .carte:hover .check, .menu .desserts .cartes_desserts .carte:hover .check {
+  -webkit-animation: rotate_check 0.7s 0.2s ease-in-out;
+          animation: rotate_check 0.7s 0.2s ease-in-out;
+}
+
+.menu .entrees .cartes_entrees .carte .carte_sans_check, .menu .entrees .cartes_plats .carte .carte_sans_check, .menu .entrees .cartes_desserts .carte .carte_sans_check, .menu .plats .cartes_entrees .carte .carte_sans_check, .menu .plats .cartes_plats .carte .carte_sans_check, .menu .plats .cartes_desserts .carte .carte_sans_check, .menu .desserts .cartes_entrees .carte .carte_sans_check, .menu .desserts .cartes_plats .carte .carte_sans_check, .menu .desserts .cartes_desserts .carte .carte_sans_check {
   width: 100%;
+  -webkit-transition-duration: 2ms;
+          transition-duration: 2ms;
 }
 
-.menu .entrees .carte .carte_sans_check:active + .bloc_check, .menu .plats .carte .carte_sans_check:active + .bloc_check, .menu .desserts .carte .carte_sans_check:active + .bloc_check {
-  -webkit-animation-name: coche_carte;
-          animation-name: coche_carte;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.menu .entrees .carte p, .menu .plats .carte p, .menu .desserts .carte p {
-  font-size: small;
+.menu .entrees .cartes_entrees .carte .carte_sans_check .titre_plat, .menu .entrees .cartes_plats .carte .carte_sans_check .titre_plat, .menu .entrees .cartes_desserts .carte .carte_sans_check .titre_plat, .menu .plats .cartes_entrees .carte .carte_sans_check .titre_plat, .menu .plats .cartes_plats .carte .carte_sans_check .titre_plat, .menu .plats .cartes_desserts .carte .carte_sans_check .titre_plat, .menu .desserts .cartes_entrees .carte .carte_sans_check .titre_plat, .menu .desserts .cartes_plats .carte .carte_sans_check .titre_plat, .menu .desserts .cartes_desserts .carte .carte_sans_check .titre_plat {
+  font-size: medium;
   font-weight: bold;
   margin-bottom: 1%;
+  margin-top: 3%;
   margin-left: 3%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.menu .entrees .carte .bloc_check, .menu .plats .carte .bloc_check, .menu .desserts .carte .bloc_check {
-  width: 0%;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-}
-
-.menu .entrees .carte .bloc_check .check, .menu .plats .carte .bloc_check .check, .menu .desserts .carte .bloc_check .check {
-  padding-left: 25%;
-  padding-top: 25%;
-  font-size: x-large;
-  color: white;
-}
-
-.menu .entrees .carte .bloc_check .check:active, .menu .plats .carte .bloc_check .check:active, .menu .desserts .carte .bloc_check .check:active {
-  -webkit-animation-name: rotate_check;
-          animation-name: rotate_check;
-}
-
-.menu .entrees .carte .legende_prix, .menu .plats .carte .legende_prix, .menu .desserts .carte .legende_prix {
+.menu .entrees .cartes_entrees .carte .carte_sans_check .legende_prix, .menu .entrees .cartes_plats .carte .carte_sans_check .legende_prix, .menu .entrees .cartes_desserts .carte .carte_sans_check .legende_prix, .menu .plats .cartes_entrees .carte .carte_sans_check .legende_prix, .menu .plats .cartes_plats .carte .carte_sans_check .legende_prix, .menu .plats .cartes_desserts .carte .carte_sans_check .legende_prix, .menu .desserts .cartes_entrees .carte .carte_sans_check .legende_prix, .menu .desserts .cartes_plats .carte .carte_sans_check .legende_prix, .menu .desserts .cartes_desserts .carte .carte_sans_check .legende_prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*uniquement le texte sous le nom des plats*/
-  /*uniquement le prix*/
 }
 
-.menu .entrees .carte .legende_prix > p, .menu .plats .carte .legende_prix > p, .menu .desserts .carte .legende_prix > p {
-  font-size: x-small;
-  padding-top: 0;
-  margin-top: 0;
+.menu .entrees .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .entrees .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .entrees .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre {
+  width: 80%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  font-size: small;
+  margin-top: 1px;
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
-.menu .entrees .carte .legende_prix .prix, .menu .plats .carte .legende_prix .prix, .menu .desserts .carte .legende_prix .prix {
+.menu .entrees .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .entrees .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .entrees .cartes_desserts .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_desserts .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_desserts .carte .carte_sans_check .legende_prix .prix {
   font-weight: bold;
   padding-right: 5%;
   font-size: small;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
-.menu .entrees .carte .legende_prix .prix:active, .menu .plats .carte .legende_prix .prix:active, .menu .desserts .carte .legende_prix .prix:active {
-  -webkit-animation-name: coche_carte;
-          animation-name: coche_carte;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.menu .entrees .cartes_entrees .carte .bloc_check, .menu .entrees .cartes_plats .carte .bloc_check, .menu .entrees .cartes_desserts .carte .bloc_check, .menu .plats .cartes_entrees .carte .bloc_check, .menu .plats .cartes_plats .carte .bloc_check, .menu .plats .cartes_desserts .carte .bloc_check, .menu .desserts .cartes_entrees .carte .bloc_check, .menu .desserts .cartes_plats .carte .bloc_check, .menu .desserts .cartes_desserts .carte .bloc_check {
+  width: 23%;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  margin-right: -30%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .entrees .cartes_entrees .carte .bloc_check .check, .menu .entrees .cartes_plats .carte .bloc_check .check, .menu .entrees .cartes_desserts .carte .bloc_check .check, .menu .plats .cartes_entrees .carte .bloc_check .check, .menu .plats .cartes_plats .carte .bloc_check .check, .menu .plats .cartes_desserts .carte .bloc_check .check, .menu .desserts .cartes_entrees .carte .bloc_check .check, .menu .desserts .cartes_plats .carte .bloc_check .check, .menu .desserts .cartes_desserts .carte .bloc_check .check {
+  font-size: x-large;
+  color: white;
 }
 
 /*Les mots Entrees / Plats et Desserts */
@@ -505,30 +509,5 @@ header .image_restaurant {
   background: linear-gradient(#fcb4e7, #c4a1ee);
   -webkit-box-shadow: 2px 5px 5px grey;
           box-shadow: 2px 5px 5px grey;
-}
-
-.cartes_entrees {
-  -webkit-animation-name: animation_carte;
-          animation-name: animation_carte;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.cartes_plats {
-  -webkit-animation-name: animation_carte;
-          animation-name: animation_carte;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.cartes_desserts {
-  -webkit-animation-name: animation_carte;
-          animation-name: animation_carte;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 /*# sourceMappingURL=styles.css.map */
