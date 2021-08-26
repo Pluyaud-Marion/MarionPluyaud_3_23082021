@@ -1,15 +1,13 @@
 .bouton_commander {
   font-size: x-large;
-  cursor: pointer;
-  height: 50px;
   width: 30%;
-  margin-left: 35%;
+  height: 50px;
+  margin-left: 40%;
   padding-top: 0;
   padding-bottom: 0;
-}
-
-nav span {
-  left: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
 }
 
 .retour_logo {
@@ -24,17 +22,21 @@ header p {
   font-size: 20px;
 }
 
+header .zone_recherche {
+  padding-left: 40%;
+}
+
+header .image_restaurant {
+  height: 500px;
+}
+
 header p + input {
-  font-size: large;
+  font-size: x-large;
   width: 40%;
   margin-left: 30%;
   height: 50px;
   padding-top: 0;
   padding-bottom: 0%;
-}
-
-header .image_restaurant {
-  height: 400px;
 }
 
 header .logo {
@@ -45,34 +47,70 @@ header .retour_logo .logo {
   padding-top: 5%;
 }
 
+.bloc_filtre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3%;
+}
+
 nav > h2 {
   font-size: 40px;
+  margin-bottom: 2%;
+  margin-left: 3.5%;
 }
 
 nav .filtre {
   font-size: 20px;
+  padding-left: 3%;
+  height: 70px;
+  width: 100%;
+  margin-left: 0;
+}
+
+nav .filtre p {
+  padding-right: 5%;
+}
+
+nav span {
+  left: 2%;
+  top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  font-size: 25px;
+}
+
+.vignettes_global {
+  padding-bottom: 3%;
 }
 
 .vignettes_global > h2 {
   padding-top: 5%;
   font-size: 40px;
+  margin-left: 3.5%;
 }
 
-.vignettes_global .vignette {
+.vignettes_global .ligne_1, .vignettes_global .ligne_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3%;
+}
+
+.vignettes_global .ligne_1 .vignette, .vignettes_global .ligne_2 .vignette {
   height: 300px;
 }
 
-.vignettes_global .vignette img {
+.vignettes_global .ligne_1 .vignette img, .vignettes_global .ligne_2 .vignette img {
   height: 200px;
 }
 
-.vignettes_global .vignette .new {
-  left: 540px;
+.vignettes_global .ligne_1 .vignette .new, .vignettes_global .ligne_2 .vignette .new {
+  left: 370px;
   bottom: 270px;
   width: 15%;
-  height: 10%;
-  padding-left: 5%;
-  font-size: medium;
+  padding-left: 2%;
 }
 
 .titre_restaurant {
@@ -147,4 +185,4 @@ footer .texte_icone {
 footer #legende_1 {
   margin-left: 2%;
 }
-/*# sourceMappingURL=styles_moyenne_resolution.css.map */
+/*# sourceMappingURL=styles_grande_resolution.css.map */
