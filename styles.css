@@ -284,6 +284,8 @@ nav .filtre > p {
   width: 100%;
   border-radius: 20px 20px 0 0;
   height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .vignette .new {
@@ -352,6 +354,8 @@ footer .texte_seul {
 
 header .image_restaurant {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*page globale sans l'image*/
@@ -523,5 +527,30 @@ header .image_restaurant {
   background: linear-gradient(#fcb4e7, #c4a1ee);
   -webkit-box-shadow: 2px 5px 5px grey;
           box-shadow: 2px 5px 5px grey;
+}
+
+.cartes_entrees {
+  -webkit-animation-name: animation_carte;
+          animation-name: animation_carte;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.cartes_plats {
+  -webkit-animation-name: animation_carte;
+          animation-name: animation_carte;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.cartes_desserts {
+  -webkit-animation-name: animation_carte;
+          animation-name: animation_carte;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 /*# sourceMappingURL=styles.css.map */
