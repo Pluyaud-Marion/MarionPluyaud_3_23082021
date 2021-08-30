@@ -321,11 +321,10 @@ header{
     position:relative;
     bottom:35px;
     margin-bottom: -35px;
-   
-    .entrees, .plats, .desserts{
+    .categorie{
         /*Toutes les cartes entrées + plat + dessert*/
         margin-top: 10%;
-        .cartes_entrees, .cartes_plats, .cartes_desserts{
+        .liste_cartes{
             margin-top: 5%;
             .carte{
                 background-color: white;

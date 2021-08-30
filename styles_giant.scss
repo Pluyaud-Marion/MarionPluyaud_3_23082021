@@ -116,9 +116,9 @@ nav{
 }
 
 .menu{
-    .entrees, .plats, .desserts{
+    .categorie{
     margin-top: 0;
-        .cartes_entrees, .cartes_plats, .cartes_desserts{
+        .liste_cartes{
             margin-top: 3%;
             .carte{
                 &:hover >.block_check{
@@ -126,6 +126,9 @@ nav{
                 }
                 &:hover .prix{
                     transform: translateX(-250%)
+                }
+                &:hover .check{
+                    font-size: 80px;
                 }
                 .carte_sans_check{
                     >.titre_plat{
@@ -145,7 +148,9 @@ nav{
     }
 }
 
-
+.check{
+    color:red;
+}
 
 
 .titre_coeur_page_restaurant{

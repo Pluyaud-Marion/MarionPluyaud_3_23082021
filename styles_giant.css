@@ -134,34 +134,42 @@ nav span {
   font-size: 80px;
 }
 
-.menu .entrees, .menu .plats, .menu .desserts {
+.menu .categorie {
   margin-top: 0;
 }
 
-.menu .entrees .cartes_entrees, .menu .entrees .cartes_plats, .menu .entrees .cartes_desserts, .menu .plats .cartes_entrees, .menu .plats .cartes_plats, .menu .plats .cartes_desserts, .menu .desserts .cartes_entrees, .menu .desserts .cartes_plats, .menu .desserts .cartes_desserts {
+.menu .categorie .liste_cartes {
   margin-top: 3%;
 }
 
-.menu .entrees .cartes_entrees .carte:hover > .block_check, .menu .entrees .cartes_plats .carte:hover > .block_check, .menu .entrees .cartes_desserts .carte:hover > .block_check, .menu .plats .cartes_entrees .carte:hover > .block_check, .menu .plats .cartes_plats .carte:hover > .block_check, .menu .plats .cartes_desserts .carte:hover > .block_check, .menu .desserts .cartes_entrees .carte:hover > .block_check, .menu .desserts .cartes_plats .carte:hover > .block_check, .menu .desserts .cartes_desserts .carte:hover > .block_check {
+.menu .categorie .liste_cartes .carte:hover > .block_check {
   -webkit-transform: translateX(-300%);
           transform: translateX(-300%);
 }
 
-.menu .entrees .cartes_entrees .carte:hover .prix, .menu .entrees .cartes_plats .carte:hover .prix, .menu .entrees .cartes_desserts .carte:hover .prix, .menu .plats .cartes_entrees .carte:hover .prix, .menu .plats .cartes_plats .carte:hover .prix, .menu .plats .cartes_desserts .carte:hover .prix, .menu .desserts .cartes_entrees .carte:hover .prix, .menu .desserts .cartes_plats .carte:hover .prix, .menu .desserts .cartes_desserts .carte:hover .prix {
+.menu .categorie .liste_cartes .carte:hover .prix {
   -webkit-transform: translateX(-250%);
           transform: translateX(-250%);
 }
 
-.menu .entrees .cartes_entrees .carte .carte_sans_check > .titre_plat, .menu .entrees .cartes_plats .carte .carte_sans_check > .titre_plat, .menu .entrees .cartes_desserts .carte .carte_sans_check > .titre_plat, .menu .plats .cartes_entrees .carte .carte_sans_check > .titre_plat, .menu .plats .cartes_plats .carte .carte_sans_check > .titre_plat, .menu .plats .cartes_desserts .carte .carte_sans_check > .titre_plat, .menu .desserts .cartes_entrees .carte .carte_sans_check > .titre_plat, .menu .desserts .cartes_plats .carte .carte_sans_check > .titre_plat, .menu .desserts .cartes_desserts .carte .carte_sans_check > .titre_plat {
+.menu .categorie .liste_cartes .carte:hover .check {
+  font-size: 80px;
+}
+
+.menu .categorie .liste_cartes .carte .carte_sans_check > .titre_plat {
   font-size: 50px;
 }
 
-.menu .entrees .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .entrees .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .entrees .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre {
+.menu .categorie .liste_cartes .carte .carte_sans_check .legende_prix .sous_titre {
   font-size: 30px;
 }
 
-.menu .entrees .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .entrees .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .entrees .cartes_desserts .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_desserts .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_desserts .carte .carte_sans_check .legende_prix .prix {
+.menu .categorie .liste_cartes .carte .carte_sans_check .legende_prix .prix {
   font-size: 35px;
+}
+
+.check {
+  color: red;
 }
 
 .titre_coeur_page_restaurant .coeur {
