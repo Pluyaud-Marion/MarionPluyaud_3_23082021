@@ -1,12 +1,16 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'robotoregular';
-  src: url("/font/roboto_regular_macroman/Roboto-Regular-webfont.ttf") format("truetype"), url("/font/roboto_regular_macroman/Roboto-Regular-webfont.woff") format("woff");
+  src: url("/font/Roboto-Regular-webfont.woff") format("woff"), url("/font/Roboto-Regular-webfont.eot") format("embedded-opentype"), url("/font/Roboto-Regular-webfont.woff") format("woff"), url("/font/Roboto-Regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Shrikhand-Regular';
-  src: url("/font/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+  font-family: 'shrikhandregular';
+  src: url("/font/shrikhand-regular-webfont.woff") format("woff"), url("/font/shrikhand-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @-webkit-keyframes animation_carte {
@@ -150,6 +154,7 @@ header p + input {
   color: white;
   font-weight: bold;
   border: none;
+  cursor: pointer;
 }
 
 header p + input:hover {
@@ -249,6 +254,7 @@ nav .filtre > p {
   opacity: 1;
   font-weight: 900;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -345,7 +351,7 @@ footer .texte_seul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Shrikhand-Regular';
+  font-family: 'shrikhandregular';
   font-size: x-large;
   margin-bottom: 5%;
   padding-right: 5%;
@@ -518,6 +524,7 @@ header .image_restaurant {
   color: white;
   font-weight: bold;
   border: none;
+  cursor: pointer;
   margin-top: 7%;
   margin-bottom: 3%;
   cursor: pointer;

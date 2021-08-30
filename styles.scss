@@ -1,12 +1,21 @@
 @font-face {
     font-family: 'robotoregular';
-    src:url('/font/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
-        url('/font/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff');
+    src: url('/font/Roboto-Regular-webfont.woff') format('woff'),
+        url('/font/Roboto-Regular-webfont.eot') format('embedded-opentype'),
+        url('/font/Roboto-Regular-webfont.woff') format('woff'),
+        url('/font/Roboto-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-    font-family:'Shrikhand-Regular';
-    src: url('/font/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+    font-family: 'shrikhandregular';
+    src: url('/font/shrikhand-regular-webfont.woff') format('woff'),
+         url('/font/shrikhand-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
+
 $primary-color:#9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color:#99E2D0;
@@ -47,6 +56,7 @@ $coeur_plein: linear-gradient($primary-color,$secondary-color);
     color: white;
     font-weight: bold;
     border:none;
+    cursor: pointer;
 }
 @mixin survol_bouton{
     &:hover{
@@ -194,7 +204,7 @@ nav{
                 color:#aa8ad4;
             }
         }
-       
+
         >p{
             margin-left: 5%;
         }
@@ -234,6 +244,7 @@ nav{
         opacity: 1;
         font-weight: 900;
         -webkit-background-clip: text;
+        background-clip: text;
         color:transparent;
     }
 }
@@ -285,7 +296,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Shrikhand-Regular';
+    font-family: 'shrikhandregular';
     font-size: x-large;
     margin-bottom: 5%;
     padding-right: 5%;
@@ -392,11 +403,12 @@ header{
                         font-size: x-large;
                         color: white;
                     }  
-                }      
+                }     
             }
         }
     }
 }
+
 
 .boite_rubrique{
     border-bottom: #99E2D0 solid;

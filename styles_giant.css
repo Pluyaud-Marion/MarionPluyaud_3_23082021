@@ -15,32 +15,46 @@
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 100px;
 }
 
 header p {
-  font-size: 20px;
+  font-size: 40px;
 }
 
 header .zone_recherche {
   padding-left: 40%;
+  height: 80px;
+}
+
+header .zone_recherche > input {
+  font-size: 30px;
+  padding-top: 2%;
+}
+
+header .zone_recherche .map {
+  font-size: 30px;
 }
 
 header .image_restaurant {
-  height: 600px;
+  height: 800px;
 }
 
 header p + input {
   font-size: x-large;
   width: 40%;
   margin-left: 30%;
-  height: 50px;
+  height: 70px;
   padding-top: 0;
   padding-bottom: 0%;
 }
 
 header .logo {
   padding-top: 5%;
+}
+
+header .retour_logo {
+  font-size: 50px;
 }
 
 header .retour_logo .logo {
@@ -61,9 +75,9 @@ nav > h2 {
 }
 
 nav .filtre {
-  font-size: 20px;
+  font-size: 40px;
   padding-left: 3%;
-  height: 70px;
+  height: 100px;
   width: 100%;
   margin-left: 0;
 }
@@ -75,10 +89,10 @@ nav .filtre p {
 nav span {
   left: 2%;
   top: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  font-size: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  font-size: 35px;
 }
 
 .vignettes_global {
@@ -99,22 +113,25 @@ nav span {
 }
 
 .vignettes_global .ligne_1 .vignette, .vignettes_global .ligne_2 .vignette {
-  height: 300px;
+  height: 500px;
 }
 
 .vignettes_global .ligne_1 .vignette img, .vignettes_global .ligne_2 .vignette img {
-  height: 200px;
+  height: 350px;
 }
 
 .vignettes_global .ligne_1 .vignette .new, .vignettes_global .ligne_2 .vignette .new {
-  left: 370px;
-  bottom: 270px;
-  width: 15%;
-  padding-left: 2%;
+  left: 850px;
+  bottom: 450px;
+  width: 12%;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 35px;
 }
 
 .titre_restaurant {
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .menu .entrees, .menu .plats, .menu .desserts {
@@ -136,15 +153,15 @@ nav span {
 }
 
 .menu .entrees .cartes_entrees .carte .carte_sans_check > .titre_plat, .menu .entrees .cartes_plats .carte .carte_sans_check > .titre_plat, .menu .entrees .cartes_desserts .carte .carte_sans_check > .titre_plat, .menu .plats .cartes_entrees .carte .carte_sans_check > .titre_plat, .menu .plats .cartes_plats .carte .carte_sans_check > .titre_plat, .menu .plats .cartes_desserts .carte .carte_sans_check > .titre_plat, .menu .desserts .cartes_entrees .carte .carte_sans_check > .titre_plat, .menu .desserts .cartes_plats .carte .carte_sans_check > .titre_plat, .menu .desserts .cartes_desserts .carte .carte_sans_check > .titre_plat {
-  font-size: x-large;
+  font-size: 50px;
 }
 
 .menu .entrees .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .entrees .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .entrees .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .plats .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_entrees .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_plats .carte .carte_sans_check .legende_prix .sous_titre, .menu .desserts .cartes_desserts .carte .carte_sans_check .legende_prix .sous_titre {
-  font-size: large;
+  font-size: 30px;
 }
 
 .menu .entrees .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .entrees .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .entrees .cartes_desserts .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .plats .cartes_desserts .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_entrees .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_plats .carte .carte_sans_check .legende_prix .prix, .menu .desserts .cartes_desserts .carte .carte_sans_check .legende_prix .prix {
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .titre_coeur_page_restaurant .coeur {
@@ -152,7 +169,7 @@ nav span {
 }
 
 .rubrique {
-  font-size: x-large;
+  font-size: 40px;
 }
 
 .boite_rubrique {
@@ -160,20 +177,20 @@ nav span {
 }
 
 .titre_coeur p {
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .titre_coeur + p {
-  font-size: 15px;
+  font-size: 30px;
 }
 
 footer {
   text-align: center;
-  font-size: 20px;
+  font-size: 50px;
 }
 
 footer h3 {
-  font-size: 80px;
+  font-size: 110px;
 }
 
 footer .texte_icone {
@@ -185,4 +202,4 @@ footer .texte_icone {
 footer #legende_1 {
   margin-left: 2%;
 }
-/*# sourceMappingURL=styles_grande_resolution.css.map */
+/*# sourceMappingURL=styles_giant.css.map */
