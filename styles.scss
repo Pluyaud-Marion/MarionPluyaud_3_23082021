@@ -22,6 +22,8 @@ $tertiary-color:#99E2D0;
 $secondary-color-clair:#fcb4e7;
 $primary-color-clair:#c4a1ee;
 $coeur_plein: linear-gradient($primary-color,$secondary-color);
+$degrade:linear-gradient($primary-color-clair,$secondary-color-clair);
+
 
 @keyframes animation_carte{
     0%{
@@ -118,10 +120,75 @@ footer{
         color: white;
     }
 }
+@keyframes disparition_page{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes loading {
+    from{
+        opacity: 1;
+        top:0;
+    }
+    to{
+        opacity: 1;
+        top:0;
+    }
+}
+@keyframes elements_loading {
+    from{
+        transform: scale(0) rotate(0deg);
+    }
+    to{
+        transform: scale(1) rotate(360deg);
+    }
+}
 body
 {
     font-family: "robotoregular";
     margin:auto;
+}
+.main{
+    opacity: 1;
+    animation-name: disparition_page;
+    animation-duration: 3s;
+}
+.loading_spinner{
+    opacity: 0;
+    animation-name: loading;
+    animation-duration: 3s;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    top: -1000px;
+    position: absolute;
+    align-items: center;
+}
+
+.load{
+    font-size: 30px;
+    animation-name: elements_loading;
+    animation-duration: 3s;
+}
+#oeuf{
+    color:#9356DC;
+}
+#canape{
+    color:#aa8ad4;
+}
+#verres{
+    color:#fcb4e7
+}
+#martini{
+    color:#bce4da;
+}
+#shop{
+    color:#99E2D0;
 }
 
 /*header des pages restaurant*/
@@ -427,17 +494,8 @@ header{
     cursor: pointer;
 }
 
-.cartes_entrees{
+.carte{
     animation-name: animation_carte;
     animation-duration: 2s;
-}
-.cartes_plats{
-    animation-name: animation_carte;
-    animation-duration: 2s;
-    animation-delay: 2s;
-}
-.cartes_desserts{
-    animation-name: animation_carte;
-    animation-duration: 2s;
-    animation-delay: 4s;
+    animation-delay: 0.5s;
 }
