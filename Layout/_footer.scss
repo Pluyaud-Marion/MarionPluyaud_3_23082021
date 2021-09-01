@@ -1,0 +1,9 @@
+footer{
+    a{
+        color: white;
+    }
+}
+
+footer{
+    @include footer;
+}

@@ -1,0 +1,51 @@
+@keyframes animation_carte{
+    0%{
+        transform:translateY(20%);
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+@keyframes rotate_check{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes disparition_page{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes loading {
+    from{
+        opacity: 1;
+        top:0;
+    }
+    to{
+        opacity: 1;
+        top:0;
+    }
+}
+@keyframes elements_loading {
+    from{
+        transform: scale(0) rotate(0deg);
+    }
+    to{
+        transform: scale(1) rotate(360deg);
+    }
+}

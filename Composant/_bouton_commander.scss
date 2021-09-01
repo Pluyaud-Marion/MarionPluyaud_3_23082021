@@ -1,0 +1,8 @@
+/*Le bouton commander*/
+.bouton_commander{
+    @include bouton;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    @include survol_bouton;
+    cursor: pointer;
+}

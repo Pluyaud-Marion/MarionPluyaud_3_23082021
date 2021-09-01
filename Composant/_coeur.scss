@@ -1,0 +1,14 @@
+.coeur{
+    font-size: x-large;
+    font-weight: 100;
+    transition-duration: 1s;
+    transition-property: all;
+    &:hover{
+        background-image: $coeur_plein; 
+        opacity: 1;
+        font-weight: 900;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:transparent;
+    }
+}

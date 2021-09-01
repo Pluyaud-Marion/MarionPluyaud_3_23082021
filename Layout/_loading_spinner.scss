@@ -1,0 +1,33 @@
+.loading_spinner{
+    opacity: 0;
+    animation-name: loading;
+    animation-duration: 3s;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    top: -1000px;
+    position: absolute;
+    align-items: center;
+}
+
+.load{
+    font-size: 30px;
+    animation-name: elements_loading;
+    animation-duration: 3s;
+}
+#oeuf{
+    color:#9356DC;
+}
+#canape{
+    color:#aa8ad4;
+}
+#verres{
+    color:#fcb4e7
+}
+#martini{
+    color:#bce4da;
+}
+#shop{
+    color:#99E2D0;
+}

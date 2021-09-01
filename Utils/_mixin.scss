@@ -1,0 +1,62 @@
+@mixin bouton{
+    border-radius: 20px;
+    width: 60%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: 19%;
+    background: linear-gradient($secondary-color, $primary-color);
+    color: white;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+}
+@mixin survol_bouton{
+    &:hover{
+    background: linear-gradient($secondary-color-clair,$primary-color-clair);
+    box-shadow: 2px 5px 5px grey;
+    }
+}
+
+@mixin footer{
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    h3{
+        font-family: "shrikhandregular";
+        margin:0;
+        margin-bottom: 5%;
+    }
+
+    #legende_1{
+        margin-left: 4%;
+    }
+    .texte_icone{
+        display: flex;
+        align-items: center;
+        p{
+            margin:2%;
+        }
+    }
+    .texte_seul{
+        margin: 2% 0;
+    }
+}
+@mixin taille_marge_logo{
+    width: 55%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    }
+
+@mixin header_page_restaurant{
+    display: flex;
+    align-items: center;
+    .retour{
+        margin-left: 5%;
+    }
+    .logo{
+        @include taille_marge_logo;
+        margin-left: 13%;
+    }
+}

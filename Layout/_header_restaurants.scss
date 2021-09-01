@@ -1,0 +1,11 @@
+/*header des pages restaurant*/
+.retour_logo{
+    @include header_page_restaurant;
+}
+
+header{
+    .image_restaurant{
+        width: 100%;
+        object-fit: cover;
+    }
+}
