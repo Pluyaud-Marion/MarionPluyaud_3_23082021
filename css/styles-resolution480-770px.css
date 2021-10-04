@@ -21,11 +21,11 @@ nav span {
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 25px;
 }
 
 header p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 header p + input {
@@ -42,15 +42,22 @@ header .image_restaurant {
 }
 
 header .logo {
-  padding-top: 5%;
+  padding-top: 1%;
+  width: 35%;
+  margin-left: 35%;
+  padding-bottom: 1%;
 }
 
 header .retour_logo .logo {
   padding-top: 5%;
 }
 
+header .zone_recherche {
+  padding-left: 40%;
+}
+
 nav > h2 {
-  font-size: 40px;
+  font-size: 25px;
 }
 
 nav .filtre {
@@ -59,7 +66,7 @@ nav .filtre {
 
 .vignettes_global > h2 {
   padding-top: 5%;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .vignettes_global .vignette {
@@ -139,11 +146,14 @@ nav .filtre {
 
 footer {
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 footer h3 {
-  font-size: 80px;
+  font-size: 50px;
+  margin-bottom: 0;
 }
 
 footer .texte_icone {

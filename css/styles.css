@@ -154,7 +154,13 @@ footer .texte_seul {
 }
 
 footer .anchor {
-  display: contents;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 /*header des pages restaurant*/
@@ -524,14 +530,14 @@ nav .filtre > p {
 
 @font-face {
   font-family: "robotoregular";
-  src: url("Base/fonts/Roboto-Regular-webfont.eot") format("embedded-opentype"), url("Base/fonts/Roboto-Regular-webfont.woff") format("woff"), url("Base/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("Base/fonts/Roboto-Regular-webfont.svg") format("svg");
+  src: url("base/fonts/Roboto-Regular-webfont.eot") format("embedded-opentype"), url("base/fonts/Roboto-Regular-webfont.woff") format("woff"), url("base/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("base/fonts/Roboto-Regular-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "shrikhandregular";
-  src: url("Base/fonts/shrikhand-regular-webfont.woff2") format("woff2"), url("Base/fonts/shrikhand-regular-webfont.woff") format("woff"), url("Base/fonts/Shrikhand-Regular.ttf") format("truetype");
+  src: url("base/fonts/shrikhand-regular-webfont.woff2") format("woff2"), url("base/fonts/shrikhand-regular-webfont.woff") format("woff"), url("base/fonts/Shrikhand-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

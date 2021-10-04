@@ -1,8 +1,8 @@
 .bouton_commander{
-    font-size: x-large;
+    font-size: 35px;
     width: 30%;
-    height: 50px;
-    margin-left: 40%;
+    height: 70px;
+    margin-left: 37%;
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;
@@ -21,10 +21,12 @@
 }
 header{
     h1{
-        font-size: 100px;
+        font-size: 70px;
+        margin-top: 1%;
     }
     p{
         font-size: 40px;
+        padding-right: 0;
     }
     .zone_recherche{
         padding-left: 40%;
@@ -38,32 +40,47 @@ header{
         }
     }
     .image_restaurant{
-        height: 800px;
+        height: 500px;
     }
     p + input{
         font-size: x-large;
-        width: 40%;
-        margin-left: 30%;
+        width: 30%;
+        margin-left: 35%;
         height: 70px;
         padding-top: 0;
         padding-bottom: 0%;
     }
     .logo{
-        padding-top: 5%;
+        width: 35%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-left: 35%;
     }
     .retour_logo{
         font-size: 50px;
         .logo{
-            padding-top: 5%;
+            padding-top: 1%;
+            width: 35%;
+            margin-left: 28%;
+            padding-bottom: 1%;
         }
     }
+}
+
+.coeur{
+    font-size: 40px;
 }
 .bloc_filtre{
     display: flex;
     margin-right: 3%;
+    align-items: center;
+    width: 80%;
 }
 
 nav{
+    display: flex;
+    margin-top: 3%;
+    
     >h2{
         font-size: 40px;
         margin-bottom: 2%;
@@ -84,29 +101,33 @@ nav{
         top:0;
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         font-size: 35px;
     }
 }
 
 .vignettes_global{
-    padding-bottom: 3%;
+    padding-bottom: 0;
     >h2{
-        padding-top: 5%;
+        padding-top: 1%;
         font-size: 40px;
-        margin-left: 3.5%;
+        margin-left: 7%;
+        margin-bottom: 1%;
     }
     .ligne_1, .ligne_2{
         display: flex;
         margin-right: 3%;
+        width: 90%;
+        margin-left: 3.5%;
         .vignette{
-            height: 500px;
+            height: 450px;
             img{
-                height: 350px;
+                height: 300px;
             }
             .new{
-                left:850px;
-                bottom:450px;
+                left:750px;
+                bottom:420px;
                 width: 12%;
                 height: 50px;
                 padding-left: 5%;
@@ -121,11 +142,15 @@ nav{
 }
 
 .menu{
+    padding-top: 2%;
+    padding-bottom: 2%;
     .categorie{
     margin-top: 0;
         .liste_cartes{
-            margin-top: 3%;
+            margin-top: 1%;
             .carte{
+                margin-bottom: 2%;
+                height: 200px;
                 &:hover >.block_check{
                 transform: translateX(-300%);
                 }
@@ -138,13 +163,15 @@ nav{
                 .carte_sans_check{
                     >.titre_plat{
                         font-size: 50px;
+                        margin-top: 1.5%;
+                        margin-bottom: 0.5%;
                     }
                     .legende_prix{
                         .sous_titre{
                             font-size: 30px;
                         }
                         .prix{
-                            font-size: 35px;
+                            font-size: 45px;
                         }
                     }
                 }
@@ -159,8 +186,9 @@ nav{
 
 
 .titre_coeur_page_restaurant{
+    margin-bottom: 2%;
     .coeur{
-        font-size: 50px;
+        font-size: 90px;
     }
 }
 .rubrique{
@@ -177,26 +205,37 @@ nav{
         font-size: 30px;
     }
 }
-.texte_footer{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 3%;
-    margin-left: 3%;
-}
 footer{
-    text-align: center;
-    font-size: 45px;
-    padding-left: 0%;
-    padding-top: 5%;
+    padding-left: 0;
+    padding-top: 1%;
     padding-bottom: 5%;
+    .anchor{
+        width: auto;
+    }
+    .texte_footer{
+        display: flex;
+        padding-right: 2%;
+        padding-left: 2%;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 0;
+        padding-bottom: 0%;
+    }
+
     h3{
         font-size: 80px;
-        margin-bottom: 2%;
+        margin-bottom: 1%;
+        text-align: center;
     }
     .texte_icone{
         justify-content: center;
+        width: 26%;
+        a{
+            width: 100%;
+        }
         p{
-            margin:0;
+            margin:1%;
             margin-left: 20px;
         }
     }

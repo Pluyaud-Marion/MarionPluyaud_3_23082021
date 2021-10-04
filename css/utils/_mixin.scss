@@ -44,7 +44,9 @@
         margin: 2% 0;
     }
     .anchor{
-        display: contents;
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 }
 @mixin taille_marge_logo{
