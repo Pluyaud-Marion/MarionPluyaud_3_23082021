@@ -1,0 +1,8 @@
+.vignettes_global .ligne_1 .vignette .new, .vignettes_global .ligne_2 .vignette .new {
+  left: 430px;
+}
+
+.menu .categorie .liste_cartes .carte .carte_sans_check > .titre_plat {
+  margin-top: 1%;
+}
+/*# sourceMappingURL=styles-resolution1800+px.css.map */

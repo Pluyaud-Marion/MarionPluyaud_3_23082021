@@ -134,7 +134,7 @@ nav span {
 .vignettes_global > h2 {
   padding-top: 1%;
   font-size: 40px;
-  margin-left: 7%;
+  margin-left: 17%;
   margin-bottom: 1%;
 }
 
@@ -156,9 +156,9 @@ nav span {
 }
 
 .vignettes_global .ligne_1 .vignette .new, .vignettes_global .ligne_2 .vignette .new {
-  left: 645px;
+  left: 470px;
   bottom: 420px;
-  width: 15%;
+  width: 20%;
   height: 50px;
   padding-left: 5%;
   padding-right: 5%;
@@ -293,4 +293,4 @@ footer .texte_icone p {
 footer #legende_1 {
   margin-left: 20px;
 }
-/*# sourceMappingURL=styles-resolution-1450+px.css.map */
+/*# sourceMappingURL=styles-resolution2513+px.css.map */

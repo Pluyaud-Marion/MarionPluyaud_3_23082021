@@ -1,0 +1,17 @@
+.vignettes_global h2 {
+  margin-left: 15%;
+}
+
+.vignettes_global .ligne_1 .vignette, .vignettes_global .ligne_2 .vignette {
+  margin-left: 15%;
+  width: 30%;
+}
+
+.vignettes_global .ligne_1 .vignette .new, .vignettes_global .ligne_2 .vignette .new {
+  left: 300px;
+}
+
+footer .texte_footer {
+  width: 90%;
+}
+/*# sourceMappingURL=styles-resolution1300+px.css.map */
