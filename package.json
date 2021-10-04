@@ -8,7 +8,7 @@
     "sass": "^1.42.1"
   },
   "scripts": {
-    "sass" : "sass --watch css/styles.scss:css/styles.css css/styles-resolution1020-1440px.scss:css/styles-resolution1020-1440px.css css/styles-resolution480-770px.scss:css/styles-resolution480-770px.css css/styles-resolution-1450+px.scss:css/styles-resolution-1450+px.css"
+    "sass" : "sass --watch css/styles.scss:css/styles.css css/styles-resolution1020-1449px.scss:css/styles-resolution1020-1449px.css css/styles-resolution480-770px.scss:css/styles-resolution480-770px.css css/styles-resolution-1450+px.scss:css/styles-resolution-1450+px.css"
   },
   "repository": {
     "type": "git",
