@@ -1,0 +1,23 @@
+{
+  "name": "p3_pluyaud_marion",
+  "version": "1.0.0",
+  "description": "projet ohmyfood!",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.42.1"
+  },
+  "scripts": {
+    "sass" : "sass --watch styles.scss:styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pluyaud-Marion/P3_Pluyaud_marion.git"
+  },
+  "author": "Pluyaud Marion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pluyaud-Marion/P3_Pluyaud_marion/issues"
+  },
+  "homepage": "https://github.com/Pluyaud-Marion/P3_Pluyaud_marion#readme"
+}
