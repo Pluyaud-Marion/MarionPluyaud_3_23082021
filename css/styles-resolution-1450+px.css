@@ -200,13 +200,28 @@ nav span {
   font-size: 30px;
 }
 
+.texte_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
 footer {
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
+  padding-left: 0%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 footer h3 {
-  font-size: 110px;
+  font-size: 80px;
+  margin-bottom: 2%;
 }
 
 footer .texte_icone {
@@ -215,7 +230,12 @@ footer .texte_icone {
           justify-content: center;
 }
 
-footer #legende_1 {
-  margin-left: 2%;
+footer .texte_icone p {
+  margin: 0;
+  margin-left: 20px;
 }
-/*# sourceMappingURL=styles_giant.css.map */
+
+footer #legende_1 {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=styles-resolution-1450+px.css.map */

@@ -23,6 +23,7 @@
     padding-top: 10%;
     padding-bottom: 10%;
     padding-left: 5%;
+
     h3{
         font-family: "shrikhandregular";
         margin:0;
@@ -41,6 +42,9 @@
     }
     .texte_seul{
         margin: 2% 0;
+    }
+    .anchor{
+        display: contents;
     }
 }
 @mixin taille_marge_logo{

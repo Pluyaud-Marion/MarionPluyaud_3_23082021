@@ -153,6 +153,10 @@ footer .texte_seul {
   margin: 2% 0;
 }
 
+footer .anchor {
+  display: contents;
+}
+
 /*header des pages restaurant*/
 .retour_logo {
   display: -webkit-box;
