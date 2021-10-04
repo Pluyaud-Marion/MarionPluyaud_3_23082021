@@ -19,4 +19,4 @@ Technologies utilisées :
 
 Validateur W3C HTML et CSS Ok
 
-Site compatible différents navigateurs : tests sur Chrome et Firefox
+Site compatible différents navigateurs : tests sur Chrome, Firefox et Safari
