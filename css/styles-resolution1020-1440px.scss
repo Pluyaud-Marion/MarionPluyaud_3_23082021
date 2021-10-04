@@ -21,10 +21,11 @@
 }
 header{
     h1{
-        font-size: 50px;
+        font-size: 30px;
     }
     p{
         font-size: 20px;
+        margin-top: 0;
     }
     .zone_recherche{
         padding-left: 40%;
@@ -33,15 +34,18 @@ header{
         height: 600px;
     }
     p + input{
-        font-size: x-large;
-        width: 40%;
-        margin-left: 30%;
+        font-size: 18px;
+        width: 30%;
+        margin-left: 35%;
         height: 50px;
         padding-top: 0;
         padding-bottom: 0%;
     }
     .logo{
-        padding-top: 5%;
+        padding-top: 2%;
+        width: 35%;
+        margin-left: 32%;
+        padding-bottom: 2%;
     }
     .retour_logo{
         .logo{
@@ -51,49 +55,59 @@ header{
 }
 .bloc_filtre{
     display: flex;
-    margin-right: 3%;
+    margin-right: 0;
+    width: 75%;
 }
 
 nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
     >h2{
-        font-size: 40px;
         margin-bottom: 2%;
         margin-left: 3.5%;
+        font-size: 20px;
     }
     .filtre{
-        font-size: 20px;
+        display: flex;
+        font-size: 15px;
         padding-left: 3%;
-        height: 70px;
-        width: 100%;
+        height: 30px;
+        width: 30%;
         margin-left: 0;
         p{
-            padding-right: 5%;
+            padding-right: 1%;
+            margin-left: 2%;
         }
     }
     span{
         left:2%;
         top:0;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 15px;
-        font-size: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+        font-size: 15px;
     }
 }
 
 .vignettes_global{
-    padding-bottom: 3%;
+    padding-bottom: 1%;
     >h2{
-        padding-top: 5%;
-        font-size: 40px;
+        padding-top: 1%;
+        font-size: 25px;
         margin-left: 3.5%;
+        margin-bottom: 1%;
     }
     .ligne_1, .ligne_2{
         display: flex;
         margin-right: 3%;
         .vignette{
-            height: 300px;
+            height: 200px;
+            width: 40%;
+            margin-left: 7%;
             img{
-                height: 200px;
+                height: 130px;
             }
             .new{
                 left:370px;
@@ -105,7 +119,7 @@ nav{
     }
 }
 .titre_restaurant{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .menu{
@@ -155,6 +169,7 @@ nav{
 .titre_coeur{
     p{
         font-size: 20px;
+        margin-top: 0;
     }
     +p{
         font-size: 15px;
