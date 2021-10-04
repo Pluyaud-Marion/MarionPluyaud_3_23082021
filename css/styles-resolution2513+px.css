@@ -184,7 +184,7 @@ nav span {
 
 .menu .categorie .liste_cartes .carte {
   margin-bottom: 2%;
-  height: 200px;
+  height: 250px;
 }
 
 .menu .categorie .liste_cartes .carte:hover > .block_check {

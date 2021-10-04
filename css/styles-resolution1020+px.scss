@@ -136,8 +136,8 @@ nav{
         .liste_cartes{
             margin-top: 1%;
             .carte{
+                height: 130px;
                 margin-bottom: 1%;
-                height: 100px;
                 &:hover >.block_check{
                 transform: translateX(-300%);
                 }
@@ -226,4 +226,3 @@ footer{
         margin-left: 10px;
     }
 }
-
