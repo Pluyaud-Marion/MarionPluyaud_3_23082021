@@ -2,6 +2,8 @@
 
 Ce respository a été réalisé dans le cadre d'un projet pour la formation dévelopeur web - Openclassrooms
 
+Projet 3 : Dynamisez une page web avec des animations CSS
+
 Création du site internet de l'entreprise de commande de repas en ligne : Ohmyfood!
 
 Contraintes imposées par l'entreprise : 
