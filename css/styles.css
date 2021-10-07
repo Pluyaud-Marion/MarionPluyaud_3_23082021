@@ -667,12 +667,30 @@ body {
 }
 
 /*chaque carte menu pour animation*/
-.carte {
+.entree {
   -webkit-animation-name: animation_carte;
           animation-name: animation_carte;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
+}
+
+.plat {
+  -webkit-animation-name: animation_carte;
+          animation-name: animation_carte;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.dessert {
+  -webkit-animation-name: animation_carte;
+          animation-name: animation_carte;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 /*# sourceMappingURL=styles.css.map */

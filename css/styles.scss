@@ -134,8 +134,19 @@ body
     margin-left: 2%;
 }
 /*chaque carte menu pour animation*/
-.carte{
+
+.entree {
     animation-name: animation_carte;
     animation-duration: 2s;
     animation-delay: 0.5s;
+}
+.plat {
+    animation-name: animation_carte;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+}
+.dessert {
+    animation-name: animation_carte;
+    animation-duration: 2s;
+    animation-delay: 3s;
 }
